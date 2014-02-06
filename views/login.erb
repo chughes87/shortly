@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>Shortly Login</title>
+  <script src="lib/jquery.js"></script>
+  <script src="lib/underscore.js"></script>
+  <script src="lib/backbone.js"></script>
+  <script src="/client/app.js"></script>
+  <script src="/client/link.js"></script>
+  <script src="/client/links.js"></script>
+  <script src="/client/linkView.js"></script>
+  <script src="/client/linksView.js"></script>
+  <script src="/client/linkCreateView.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <form method="Post" action="/login">
+    <label for="username">Username
+      <input name="username" id="username">
+    </label>
+    <label for="password">Password
+      <input name="password" id="password">
+    </label>
+    <button type="submit">Login</button>
+  </form>
+
+  <form method="Post" action="/user">
+    <label for="username">Username
+      <input name="username" id="username">
+    </label>
+    <label for="password">Password
+      <input name="password" id="password">
+    </label>
+    <label for="password">Confirm Password
+      <input name="password_confirm" id="password">
+    </label>
+    <button type="submit">Create Account</button>
+  </form>
+
+</body>
+</html>
